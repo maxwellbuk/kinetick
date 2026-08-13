@@ -1,6 +1,5 @@
-from asyncio import gather, run
-
 from src.entrypoints import start_api, start_bot
+from asyncio import gather, run
 
 async def start_all_services():
     await gather(start_bot(), start_api())
